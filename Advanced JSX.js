@@ -44,3 +44,15 @@ const theBestString = 'This text was accessed through a javascript variable';
 
 root.render(<h1>{theBestString}</h1>);
 
+//7 Variable Attributes in JSX
+
+const gooseImg = (
+  <img
+    src={goose}/>
+);
+root.render(gooseImg);
+
+//Event Listeners in JSX
+
+
+
