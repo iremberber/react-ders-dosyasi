@@ -24,5 +24,23 @@ const profile = (
     </div>
   );
 
-  
+//3 JavaScript In Your JSX In Your JavaScript
+
+root.render(<h1>2 + 3</h1>);
+
+//4 Curly Braces in JSX
+
+root.render(<h1>{2 + 3}</h1>);
+
+//5 20 Digits of Pi in JSX
+
+const math = <h1>2 + 3 = {2 + 3}</h1>;
+
+root.render(math);
+
+//6 Variables in JSX
+
+const theBestString = 'This text was accessed through a javascript variable';
+
+root.render(<h1>{theBestString}</h1>);
 
