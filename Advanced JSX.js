@@ -110,10 +110,55 @@ root.render(img);
 
 //11 JSX Conditionals: The Ternary Operator
 
+const img2 = <img src={pics[coinToss() === 'heads' ? 'kitty' : 'doggy']} />;
 
+root.render(img);
 
+//12 JSX Conditionals: &&
 
+const judgmental = Math.random() < 0.5;
 
+const favoriteFoods = (
+  <div>
+    <h1>My Favorite Foods</h1>
+    <ul>
+      <li>Sushi Burrito</li>
+      <li>Rhubarb Pie</li>
+      {!judgmental && <li>Nacho Cheez Straight Out The Jar</li> }
+      <li>Broiled Grapefruit</li>
+    </ul>
+  </div>
+);
 
+root.render(favoriteFoods);
 
+//13 .map in JSX
+
+const people = ['Rowe', 'Prevost', 'Gare'];
+
+const peopleList = people.map((person,i) =>
+  // expression goes here:
+  <li>{person}</li>
+);
+
+// root.render goes here:
+root.render(<ul>{peopleList}</ul>)
+
+//14 Keys
+
+const peopleList2 = people.map((person,i) =>
+  // expression goes here:
+  <li key={'person_' + i}>{person}</li>
+);
+
+// root.render goes here:
+root.render(<ul>{peopleList}</ul>)
+
+//15 React.createElement
+
+const greatestDivEver = React.createElement(
+  "div",
+  null,
+  "i am div"
+);
 
