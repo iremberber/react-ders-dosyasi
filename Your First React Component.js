@@ -24,3 +24,31 @@ function IremsComponent(){
 }
 
 
+//5 The Return Keyword in Functional Components
+function MyComponent() {
+    return <h1>Hello world</h1>;
+   }
+
+//6 Importing and Exporting React Components
+import MyComponentt from './App';
+//export default MyComponent;
+
+
+//7 Using and Rendering a Component
+ReactDOM.createRoot(document.getElementById('app')).render(<MyComponent />);
+
+//Review
+/*
+import React from 'react';
+
+function MyComponent() {
+  return(
+  <div>
+    <h1>Hello world</h1>
+    <button> Click me!</button>
+   </div>)
+}
+
+export default MyComponent;
+*/
+
