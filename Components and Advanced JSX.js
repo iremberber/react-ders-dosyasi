@@ -88,3 +88,16 @@ function TonightsPlan() {
 }
 //export default TonightsPlan;
 
+//5 Event Listener and Event Handlers in a Component
+
+import React from 'react';
+
+function SubmitButton() {
+  function handleClick() {
+    alert('Submission Successful.');
+  }
+  return <button onClick={handleClick}>Submit</button>;
+}
+
+//export default SubmitButton;
+
