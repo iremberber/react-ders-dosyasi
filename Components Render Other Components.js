@@ -36,3 +36,32 @@ function ProfilePage() {
 }
 
 //export default ProfilePage;
+
+//3 
+
+/* 
+import React from "react";
+
+function HelloWorld(){
+  return(
+    <h1>hi</h1>
+  );
+}
+
+export default HelloWorld;
+*/
+
+/*
+import React from "react";
+import HelloWorld from './HelloWorld';
+
+function App(){
+    return(
+      <HelloWorld />
+  );
+}
+
+export default App;
+*/
+
+
