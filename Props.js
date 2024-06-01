@@ -23,7 +23,7 @@ function App() {
   return <PropsDisplayer myProp="Hello" />;
 }
 
-export default App;
+//export default App;
 
 //4 Render a Component's props
 
@@ -37,4 +37,44 @@ function Product(props) {
   );
 }
 
-export default Product;
+//export default Product;
+
+//5 Pass props From Component To Component
+
+//player.js
+function Player(props) {
+  return (
+    <>
+      <h1>{props.songName}</h1>
+      <h2>{props.artist}</h2>
+    </>
+  );
+}
+
+//export default Player;
+
+//app.js
+import Player from './Player';
+function App() {
+ return(
+  <Player songName="Speak now" artist="Taylor swift"/>
+ )
+ 
+}
+
+//export default App;
+
+//6 Render Different UI Based on props
+
+function App() {
+  return (
+    <div>
+      <h1>
+        MovieFlix
+      </h1>
+      <Greeting name="Alison" signedIn={true} />
+    </div>
+  );
+}
+
+//export default App;
