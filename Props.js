@@ -111,3 +111,45 @@ function Talker() {
 
 //9 Receive an Event Handler as a prop
 
+import React from 'react';
+
+function Button(props) {
+  return (
+    <button onClick={props.talk}>
+      Click me!
+    </button>
+  );
+}
+
+//export default Button;
+
+//10 handleEvent, onEvent, and props.onEvent
+
+//talker.js
+import React from 'react';
+import Button from './Button';
+
+function Talker() {
+  function handleClick() {
+    let speech = '';
+    for (let i = 0; i < 10000; i++) {
+      speech += 'blah ';
+    }
+    alert(speech);
+	}
+  return <Button onClick={handleClick}/>;
+}
+
+//export default Talker;
+//button.js
+import React from 'react';
+
+function Button(props) {
+    return (
+      <button onClick={props.onClick}>
+        Click me!
+      </button>
+    );
+}
+
+//export default Button;
