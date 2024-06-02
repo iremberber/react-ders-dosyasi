@@ -78,3 +78,36 @@ function App() {
 }
 
 //export default App;
+
+//7 Put an Event Handler in a Function Component
+
+function Talker() {
+  function talk() {
+  let speech = '';
+  for (let i = 0; i < 10000; i++) {
+    speech += 'blah ';
+  }
+  alert(speech);
+}
+  return <Button />;
+}
+
+//export default Talker;
+
+//8 Pass an Event Handler as a prop
+
+function Talker() {
+  function talk() {
+    let speech = '';
+    for (let i = 0; i < 10000; i++) {
+      speech += 'blah ';
+    }
+    alert(speech);
+	}
+  return <Button talk={talk} />;
+}
+
+//export default Talker;
+
+//9 Receive an Event Handler as a prop
+
