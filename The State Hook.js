@@ -270,7 +270,7 @@ function MusicalRefactored() {
       SanFrancisco: {
         dates: ["5/2"], 
         address: "sf theater"
-      });
+      }});
 }
 
 //9 Review
