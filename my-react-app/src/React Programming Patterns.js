@@ -56,3 +56,34 @@ function GuineaPigs() {
 }
 
 export default GuineaPigs;
+
+//2 Create Presentational Component
+
+import React from "react";
+
+function GuineaPigsSlideShow({src, isFavorite}){
+     return( <div data-testid="guineaPigsSlideShow" id="guineaPigsSlideShow">
+        <h1>Cute Guinea Pigs</h1>
+        <img alt="Guinea Pigs Slideshow" src={src} className={isFavorite? "favorite" : ""}/>
+      </div>)
+};
+
+//export default GuineaPigsSlideShow;
+
+//3 Parent/Child and Sibling/Sibling Communication
+
+import React from "react";
+
+function GuineaPigsForm({favoriteGP, onSelectFavorite, onResetFavorite}){
+ 		  <div data-testid="guineaPigsForm" id="guineaPigsForm">	
+			  <label>Choose Your Favorite Guinea Pig:
+          <select value={favoriteGP} onChange={onSelectFavorite}>
+            <option value="0">Alex</option>
+            <option value="1">Izzy</option>
+            <option value="2">Brandon</option>
+            <option value="3">DJ</option>
+          </select>
+        </label>
+        <button onClick={onResetFavorite}>Reset Favorite</button>
+		  </div>
+};
