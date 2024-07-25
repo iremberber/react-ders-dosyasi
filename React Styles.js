@@ -16,3 +16,17 @@ function StyleDemo() {
 }
 
 export default StyleDemo
+
+//2 Style Syntax
+
+const myStyle2 = {
+    background: 'lightblue',
+    color: 'darkblue',
+    marginTop: 100,
+    fontSize: 50
+  }
+  
+  function StyleDemo() {
+    return <button style={myStyle2}>button</button>
+  }
+  
