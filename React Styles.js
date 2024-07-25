@@ -30,3 +30,24 @@ const myStyle2 = {
     return <button style={myStyle2}>button</button>
   }
   
+//3 Multiple Stylesheets
+
+/* styles
+.h1 {
+    color: blue;
+    font-size: 4em;
+    font-family: "Comic Sans MS", Lucida Handwriting, cursive;
+    padding: 200px 0px 25px 0px;
+    margin: 0;
+}
+ */
+import styles from './styles/AttentionGrabber.module.css';
+
+function AttentionGrabber() {
+  return (
+    <>
+      <h1 className={styles.h1}>Hi! Welcome to my portfolio.</h1>
+      <p>I'm a developer who likes designing user-friendly websites.</p>
+    </>
+  )
+}
